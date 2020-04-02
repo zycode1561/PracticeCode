@@ -1,4 +1,4 @@
-package main.newCoder;
+package main.algorithm;
 
 public class CanJump_55 {
     public boolean canJump(int[] nums) {

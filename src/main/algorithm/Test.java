@@ -1,6 +1,4 @@
-package main.newCoder;
-
-import java.util.*;
+package main.algorithm;
 
 /**
  *

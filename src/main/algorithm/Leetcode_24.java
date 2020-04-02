@@ -1,6 +1,4 @@
-package main.newCoder;
-
-import main.newCoder.ListNode;
+package main.algorithm;
 
 /**
  * 两两交换链表中的节点

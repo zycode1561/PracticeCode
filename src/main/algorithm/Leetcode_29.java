@@ -1,4 +1,4 @@
-package main.newCoder;
+package main.algorithm;
 
 /**
  * 两数相除

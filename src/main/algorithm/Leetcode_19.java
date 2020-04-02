@@ -1,4 +1,4 @@
-package main.newCoder;
+package main.algorithm;
 /**
  * 删除链表的倒数第n个节点
  */

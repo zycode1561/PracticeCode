@@ -1,4 +1,4 @@
-package main.newCoder;
+package main.algorithm;
 
 public class Rotate_48 {
     public static void rotate(int[][] matrix) {

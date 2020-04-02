@@ -1,4 +1,4 @@
-package main.newCoder;
+package main.algorithm;
 
 import java.util.ArrayList;
 import java.util.Arrays;

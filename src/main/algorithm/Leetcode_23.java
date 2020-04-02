@@ -1,6 +1,4 @@
-package main.newCoder;
-
-import main.newCoder.ListNode;
+package main.algorithm;
 
 /**
  * 合并k个有序链表

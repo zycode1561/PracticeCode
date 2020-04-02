@@ -1,4 +1,4 @@
-package main.newCoder;
+package main.algorithm;
 
 public class Leetcode_14 {
 

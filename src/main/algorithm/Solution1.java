@@ -1,4 +1,4 @@
-package main.newCoder;
+package main.algorithm;
 
 public class Solution1 {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
