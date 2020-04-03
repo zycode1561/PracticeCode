@@ -1,35 +1,38 @@
 package main.algorithm;
 
+import java.util.*;
+
 /**
  *
  */
 public class Test {
     public static void main(String[] args) {
-//        Map<String, List> map = new HashMap<>();
-//        List<Integer> list1 = new ArrayList<>();
-//        list1.add(1);
-//        list1.add(1);
-//        list1.add(1);
-//        list1.add(1);
-//        list1.add(1);
-//        List<Integer> list2 = new ArrayList<>();
-//        list2.add(2);
-//        list2.add(2);
-//        list2.add(2);
-//        list2.add(2);
-//        list2.add(2);
-//        map.put("test1",list1);
-//        map.put("test2",list2);
-//        ArrayList res = new ArrayList<>(map.values());
-//        for(Object list : res){
-//            System.out.println(list);
-//        }
-//        Scanner sc = new Scanner(System.in);
-//        double d = sc.nextDouble();
-//        int x = sc.nextInt();
-//        System.out.println(d+x);
-        Integer a = 123;
-        Integer b = 123;
-        System.out.println(a == b);
+        int[] digits = new int[]{9, 9, 9, 9};
+        List<Integer> list = new LinkedList<>();
+        int c = 0;
+        digits[digits.length - 1] += 1;
+        for (int i = digits.length - 1; i >= 0; i--) {
+            int n = c + digits[i];
+            if (n >= 10) {
+                list.add(n - 10);
+                c = 1;
+            } else {
+                list.add(n);
+                c = 0;
+            }
+        }
+        if (c == 1) list.add(c);
+        Collections.reverse(list);
+        int[] res = new int[list.size()];
+        int i = 0;
+        for(int a : list){
+            res[i] = a;
+            i++;
+        }
+        System.out.println(Arrays.toString(res));
+        System.out.println("------------");
+        String path = "a/b/c//.//./../";
+        String[] paths = path.split("/");
+        System.out.println(Arrays.toString(paths));
     }
 }
