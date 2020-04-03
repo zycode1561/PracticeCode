@@ -26,6 +26,8 @@ public class EditDistance_72 {
                 if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
                     dp[i][j] = dp[i - 1][j - 1];
                 } else {//若不想等
+                    //三种操作，插入（dp[i - 1][j]），删除（dp[i][j-1]），替换（dp[i-1][j-1]）
+                    //获取三者最小值，加上操作数1
                     dp[i][j] = Math.min(dp[i-1][j-1],Math.min(dp[i - 1][j], dp[i][j - 1])) + 1;
                 }
             }
