@@ -3,11 +3,12 @@ package main.algorithm;
 import java.util.*;
 
 /**
- *
+ *测试类，用于测试一些函数的使用
  */
 public class Test {
     public static void main(String[] args) {
-        int[] digits = new int[]{9, 9, 9, 9};
+        int[] digits = new int[]{9, 23,5346,67,21,1245,8};
+        System.out.println(Arrays.toString(digits));
         List<Integer> list = new LinkedList<>();
         int c = 0;
         digits[digits.length - 1] += 1;
@@ -34,5 +35,7 @@ public class Test {
         String path = "a/b/c//.//./../";
         String[] paths = path.split("/");
         System.out.println(Arrays.toString(paths));
+        System.out.println("------");
+        System.out.println(Math.sqrt(1));
     }
 }
