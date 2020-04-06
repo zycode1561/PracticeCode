@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 //匈牙利算法，找增广路径，分成奇数偶数两组
-
+//二路图求最大匹配
 public class CouplePrime {
 
     public static void main(String[] args) {
