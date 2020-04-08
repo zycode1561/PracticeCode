@@ -37,6 +37,7 @@ public class Test {
         System.out.println(Arrays.toString(paths));
         System.out.println("------");
         System.out.println(Math.sqrt(1));
+        System.out.println(Integer.MAX_VALUE);
     }
 
 
@@ -46,7 +47,7 @@ public class Test {
      * 逐行，从左到右，在每一个位置上试探1-9，成功就进入下一个位置，失败就取消本次选择，做下一个选择
      * 当前行试探完毕就换行，知道换到最后一行
      *
-     * @param board
+     * @param board 数独数组
      */
     public void solution(char[][] board) {
         // 非法数独
@@ -99,11 +100,11 @@ public class Test {
      * j / 3 * 3可以确定它所在的子数独是前三列还是中散列还是后三列，
      * 相当于这两个只是确定了这个【子数独的左上角坐标】，而需要借助 k 完全对这个9个位置的扫描
      *
-     * @param board
-     * @param row
-     * @param col
-     * @param ch
-     * @return
+     * @param board 数独数组
+     * @param row 行
+     * @param col 列
+     * @param ch 当前将要填充的字符
+     * @return 填充的数字字符是否合法
      */
     private boolean isValid(char[][] board, int row, int col, char ch) {
         // 三个方向，任一方向重复，ch就不能放在这个位置
