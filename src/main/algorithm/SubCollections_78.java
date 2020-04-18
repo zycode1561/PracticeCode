@@ -24,7 +24,7 @@ public class SubCollections_78 {
 
     public static void main(String[] args) {
         SubCollections_78 subCollections_78 = new SubCollections_78();
-        int[] a = {};
+        int[] a = {1,2,2};
         List<List<Integer>> res = subCollections_78.subsets(a);
         for (List<Integer> list : res) {
             System.out.println(list);

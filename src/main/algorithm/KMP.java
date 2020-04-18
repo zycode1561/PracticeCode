@@ -4,7 +4,7 @@ public class KMP {
     private int[][] dp;
     private String pat;
 
-    public KMP(String pat){
+    private KMP(String pat){
         this.pat = pat;
         int M = pat.length();
         //dp[状态][字符] = 下一个状态
@@ -24,7 +24,7 @@ public class KMP {
         }
     }
 
-    public int search(String txt){
+    private int search(String txt){
         int M = pat.length();
         int N = txt.length();
         //pat 的初始状态为0
