@@ -14,7 +14,7 @@ package main.algorithm.dp;
  *     匹配的s3的下标，一定是s1的当前长度 + s2的当前长度 - 1（下标要减1），所以我们就可以把三维的数组降到二维
  */
 public class StaggeredStr {
-    public boolean isInterleave(String s1, String s2, String s3) {
+    private static boolean isInterleave(String s1, String s2, String s3) {
         int l1 = s1.length();
         int l2 = s2.length();
         int l3 = s3.length();
@@ -42,5 +42,10 @@ public class StaggeredStr {
             }
         }
         return dp[l1][l2];
+    }
+
+    public static void main(String[] args) {
+        boolean interleave = isInterleave("aabcc", "dbbca", "aadbbcbcac");
+        System.out.println(interleave);
     }
 }
