@@ -1,7 +1,4 @@
-package main.algorithm.recursion;
-
-import main.algorithm.lc_tree.TraverseTree;
-import main.algorithm.lc_tree.TreeNode;
+package main.algorithm.lc_tree;
 
 import java.util.ArrayList;
 import java.util.List;
