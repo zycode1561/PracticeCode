@@ -3,9 +3,9 @@ package main.algorithm;
 /**
  * 合并k个有序链表
  */
-public class Leetcode_23 {
+public class MergeKLists_23 {
 
-    public ListNode mergeKLists(ListNode[] lists) {
+    private ListNode mergeKLists(ListNode[] lists) {
         if(lists.length == 0) return null;
         return mergekLists(lists, 0, lists.length - 1);
     }
@@ -59,7 +59,7 @@ public class Leetcode_23 {
     }
 
     public static void main(String[] args) {
-        Leetcode_23 leetcode_23 = new Leetcode_23();
+        MergeKLists_23 leetcode_23 = new MergeKLists_23();
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(4);
         ListNode node3 = new ListNode(5);

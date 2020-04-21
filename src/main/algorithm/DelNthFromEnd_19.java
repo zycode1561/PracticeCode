@@ -2,9 +2,9 @@ package main.algorithm;
 /**
  * 删除链表的倒数第n个节点
  */
-public class Leetcode_19 {
+public class DelNthFromEnd_19 {
 
-    public ListNode removeNthFromEnd(ListNode head, int n) {
+    private ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode pre = new ListNode(0);
         pre.next = head;
         ListNode start = pre , end = pre;
@@ -30,7 +30,7 @@ public class Leetcode_19 {
         node1.next = node2;
         node2.next = node3;
         node3.next = node4;
-        Leetcode_19 leetcode_19 = new Leetcode_19();
+        DelNthFromEnd_19 leetcode_19 = new DelNthFromEnd_19();
         ListNode node = leetcode_19.removeNthFromEnd(head, 2);
         System.out.print(node.val+" ");
         while((node = node.next)!=null){

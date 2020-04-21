@@ -4,18 +4,21 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 给出一个区间的集合，请合并所有重叠的区间。
+ */
 public class mergeInterval_56 {
     //定义分支类
     private static class Interval{
         int start;
         int end;
         //传入一个数组进行初始化
-        public  Interval(int[] interval){
+        Interval(int[] interval){
             this.start = interval[0];
             this.end = interval[1];
         }
         //把分支转变成数组，用于返回和输出
-        public int[] toArray(){
+        int[] toArray(){
             return new int[]{this.start,this.end};
         }
     }

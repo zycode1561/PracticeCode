@@ -3,7 +3,7 @@ package main.algorithm;
 /**
  * 合并两个有序链表
  */
-public class Leetcode_21 {
+public class MergeTwoLists_21 {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null) {
             return null;
@@ -40,7 +40,7 @@ public class Leetcode_21 {
     }
 
     public static void main(String[] args) {
-        Leetcode_21 leetcode_21 = new Leetcode_21();
+        MergeTwoLists_21 leetcode_21 = new MergeTwoLists_21();
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2);
         ListNode node3 = new ListNode(4);

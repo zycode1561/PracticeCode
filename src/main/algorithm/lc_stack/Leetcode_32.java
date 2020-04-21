@@ -1,4 +1,4 @@
-package main.algorithm;
+package main.algorithm.lc_stack;
 
 import java.util.Stack;
 
@@ -6,7 +6,7 @@ import java.util.Stack;
  * 最长有效括号
  */
 public class Leetcode_32 {
-    public boolean isValid(String s) {
+    private boolean isValid(String s) {
         Stack<Character> stack = new Stack<Character>();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
@@ -19,7 +19,7 @@ public class Leetcode_32 {
         }
         return stack.empty();
     }
-    public int longestValidParentheses(String s) {
+    private int longestValidParentheses(String s) {
         int maxlen = 0;
         for (int i = 0; i < s.length(); i++) {
             for (int j = i + 2; j <= s.length(); j+=2) {

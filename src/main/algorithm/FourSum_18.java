@@ -6,9 +6,9 @@ import java.util.List;
 /**
  * 四数之和
  */
-public class Leetcode_18 {
+public class FourSum_18 {
 
-    public List<List<Integer>> fourSum(int[] nums,int target){
+    private List<List<Integer>> fourSum(int[] nums, int target){
         /*定义一个返回值*/
         List<List<Integer>> result=new ArrayList<>();
         /*当数组为null或元素小于4个时，直接返回*/
@@ -82,7 +82,7 @@ public class Leetcode_18 {
     public static void main(String[] args) {
         int[] nums = { 1, 0, -1, 0, -2, 2 };
         int target = 0;
-        Leetcode_18 leetcode_18 = new Leetcode_18();
-        System.out.println(leetcode_18.fourSum(nums, target));
+        FourSum_18 fourSum = new FourSum_18();
+        System.out.println(fourSum.fourSum(nums, target));
     }
 }

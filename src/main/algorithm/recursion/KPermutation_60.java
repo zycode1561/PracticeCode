@@ -1,7 +1,7 @@
-package main.algorithm;
+package main.algorithm.recursion;
 
-import java.util.Arrays;
 
+////给定 n 和 k，返回第 k 个排列。
 //用n个数的n-1阶乘来分组，判断每个数是在哪一组，递归判断，
 //用一个visited数组记录访问过的数字，按照顺序往结果数组中插入
 public class KPermutation_60 {

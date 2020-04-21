@@ -2,7 +2,7 @@ package main.algorithm;
 
 import java.util.Arrays;
 
-public class Leetcode_16 {
+public class ThreeSumClosest_16 {
 
     /**
      * 最接近的三数之和

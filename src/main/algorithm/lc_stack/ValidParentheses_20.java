@@ -1,11 +1,11 @@
-package main.algorithm;
+package main.algorithm.lc_stack;
 
 import java.util.*;
 /**
  * 有效的括号
  */
-public class Leetcode_20 {
-    public boolean isValid(String s) {
+public class ValidParentheses_20 {
+    private boolean isValid(String s) {
         if (s.length() == 0)
             return true;
         if (s.length() % 2 != 0)
@@ -41,7 +41,7 @@ public class Leetcode_20 {
     }
 
     public static void main(String[] args) {
-        Leetcode_20 leetcode_20 = new Leetcode_20();
+        ValidParentheses_20 leetcode_20 = new ValidParentheses_20();
         String s = "([)]";
         System.out.println(leetcode_20.isValid(s));
     }

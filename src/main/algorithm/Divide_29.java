@@ -3,8 +3,8 @@ package main.algorithm;
 /**
  * 两数相除
  */
-public class Leetcode_29 {
-    public int divide(int dividend, int divisor) {
+public class Divide_29 {
+    private int divide(int dividend, int divisor) {
         if(dividend == 0) return 0;
         if(divisor == 1) return dividend;
         if(divisor == -1){
@@ -50,7 +50,7 @@ public class Leetcode_29 {
     }
 
     public static void main(String[] args) {
-        Leetcode_29 leetcode_29 = new Leetcode_29();
+        Divide_29 leetcode_29 = new Divide_29();
         int res = leetcode_29.divide(-2147483648, 2);
         System.out.println(res);
     }

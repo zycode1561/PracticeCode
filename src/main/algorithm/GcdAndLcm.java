@@ -1,6 +1,9 @@
 package main.algorithm;
 
 public class GcdAndLcm {
+    //最大公约数和最小公倍数
+
+    //最大公约数
     private static long getGcd(long n1, long n2) {
         long gcd = -1;
         if (n1 < n2) {
@@ -21,6 +24,7 @@ public class GcdAndLcm {
         return gcd;
     }
 
+    //最小公倍数
     private static long getLcm(long n1, long n2) {
         return n1 * n2 / getGcd(n1, n2);
     }

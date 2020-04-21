@@ -1,4 +1,4 @@
-package main.algorithm;
+package main.algorithm.dp;
 
 public class KMP {
     private int[][] dp;

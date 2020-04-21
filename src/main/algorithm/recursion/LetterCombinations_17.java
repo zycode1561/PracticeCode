@@ -1,11 +1,11 @@
-package main.algorithm;
+package main.algorithm.recursion;
 
 import java.util.*;
 
 /**
  * 电话号码的字母组合
  */
-public class Leetcode_17 {
+public class LetterCombinations_17 {
 
     private  Map<Integer, String> map = new HashMap<>();
 
@@ -20,7 +20,7 @@ public class Leetcode_17 {
         map.put(9, "wxyz");
     }
 
-    public  List<String> letterCombinations(String digits) {
+    private List<String> letterCombinations(String digits) {
         List<String> res = new ArrayList<String>();
         initMap();
         if (digits.length() == 0) return res;
@@ -56,7 +56,7 @@ public class Leetcode_17 {
 
     public static void main(String[] args) {
         String digits = "2345";
-        Leetcode_17 leetcode_17 = new Leetcode_17();
+        LetterCombinations_17 leetcode_17 = new LetterCombinations_17();
         System.out.println(leetcode_17.letterCombinations(digits).toString());
         System.out.println(leetcode_17.letterCombinations(digits).size());
     }

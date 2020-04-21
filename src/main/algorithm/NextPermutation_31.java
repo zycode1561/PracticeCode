@@ -4,8 +4,8 @@ import java.util.Arrays;
 /**
  * 下一个排列
  */
-public class Leetcode_31 {
-    public void nextPermutation(int[] nums) {
+public class NextPermutation_31 {
+    private void nextPermutation(int[] nums) {
         int len = nums.length;
         if (len == 0 || len == 1)
             return;
@@ -74,7 +74,7 @@ public class Leetcode_31 {
 
 
     public static void main(String[] args) {
-        Leetcode_31 leetcode_31 = new Leetcode_31();
+        NextPermutation_31 leetcode_31 = new NextPermutation_31();
         int[] nums = { 1, 1 };
         leetcode_31.nextPermutation(nums);
         System.out.println(Arrays.toString(nums));

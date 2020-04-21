@@ -1,9 +1,11 @@
-package main.algorithm;
+package main.algorithm.dp;
 
 /**
  * @author ZhangYun
  * @version 1.0
  * @date 2020/4/19
+ *
+ * 给定一个只包含数字的非空字符串，请计算解码方法的总数。
  */
 public class DecodeWays_91 {
     public static void main(String[] args) {

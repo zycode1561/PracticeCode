@@ -1,6 +1,6 @@
 package main.algorithm;
 
-public class Leetcode_14 {
+public class LongestPrefix_14 {
 
     /**
      * 最长公共前缀，selfSolution

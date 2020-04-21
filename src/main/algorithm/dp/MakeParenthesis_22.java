@@ -1,4 +1,4 @@
-package main.algorithm;
+package main.algorithm.dp;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.List;
  * 括号生成
  * 动态规划
  */
-public class Leetcode_22 {
+public class MakeParenthesis_22 {
     public List<String> generateParenthesis(int n) {
         if (n == 0) {
             return new ArrayList<>();
@@ -37,7 +37,7 @@ public class Leetcode_22 {
     }
 
     public static void main(String[] args) {
-        Leetcode_22 leetcode_22 = new Leetcode_22();
+        MakeParenthesis_22 leetcode_22 = new MakeParenthesis_22();
         // System.out.println(leetcode_22.generateParenthesis(3).toString());
         int a1 = 12;
         a1 = -a1;

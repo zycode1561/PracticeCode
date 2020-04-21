@@ -1,11 +1,11 @@
-package main.algorithm;
+package main.algorithm.backtrack;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Combinations_77 {
-    public List<List<Integer>> combine(int n, int k) {
+    private List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> res = new LinkedList<>();
         LinkedList<Integer> list = new LinkedList<>();
         backtrack(res, list, 1, n, k);

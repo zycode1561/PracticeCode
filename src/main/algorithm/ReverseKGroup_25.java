@@ -2,9 +2,9 @@ package main.algorithm;
 
 import java.util.StringTokenizer;
 
-public class Leetcode_25 {
+public class ReverseKGroup_25 {
 
-    public ListNode reverseKGroup(ListNode head, int k) {
+    private ListNode reverseKGroup(ListNode head, int k) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
     
@@ -39,7 +39,7 @@ public class Leetcode_25 {
     }
     
     public static void main(String[] args) {
-        Leetcode_25 leetcode_25 = new Leetcode_25();
+        ReverseKGroup_25 leetcode_25 = new ReverseKGroup_25();
         ListNode node0 = null;
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2);

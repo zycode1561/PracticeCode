@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Leetcode_15 {
-    public static List<List<Integer>> threeSum(int[] nums) {
+//三数之和
+public class ThreeSum_15 {
+    private static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
         if (nums == null || nums.length < 3) return ans;
         int len = nums.length;
