@@ -7,13 +7,13 @@ package main.algorithm.lc_tree;
  */
 public class TreeNode {
     int val;
-    public TreeNode lchild;
-    public TreeNode rchild;
+    public TreeNode left;
+    public TreeNode right;
 
     public TreeNode(int val, TreeNode lchild, TreeNode rchild) {
         this.val = val;
-        this.lchild = lchild;
-        this.rchild = rchild;
+        this.left = lchild;
+        this.right = rchild;
     }
 
     public TreeNode(int val) {

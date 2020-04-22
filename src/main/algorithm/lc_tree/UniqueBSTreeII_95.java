@@ -34,8 +34,8 @@ public class UniqueBSTreeII_95 {
             for (TreeNode lNodes : left) {
                 for (TreeNode rNodes : right) {
                     TreeNode root = new TreeNode(i);
-                    root.lchild = lNodes;
-                    root.rchild = rNodes;
+                    root.left = lNodes;
+                    root.right = rNodes;
                     ans.add(root);
                 }
             }

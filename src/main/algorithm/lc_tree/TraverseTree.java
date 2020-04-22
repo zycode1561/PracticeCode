@@ -16,13 +16,13 @@ public class TraverseTree {
         while (node != null || !stack.empty()){
             while (node != null) {
                 stack.push(node);
-                node = node.lchild;
+                node = node.left;
             }
 
             if (!stack.empty()) {
                 node = stack.pop();
                 System.out.print(node.val + " ");
-                node = node.rchild;
+                node = node.right;
             }
         }
     }
@@ -35,12 +35,12 @@ public class TraverseTree {
             while (node != null) {
                 System.out.print(node.val + " ");
                 stack.push(node);
-                node = node.lchild;
+                node = node.left;
             }
 
             if (!stack.empty()) {
                 node = stack.pop();
-                node = node.rchild;
+                node = node.right;
             }
         }
     }
